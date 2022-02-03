@@ -30,9 +30,9 @@ public class ProductController {
 
 	@GetMapping("/findProducts")
 	public List<Product> getProducts() {
-		
+		System.out.println("before");
 		List<Product> products = service.findAllProducts();
-	
+
 		return products;
 	}
 
